@@ -3,6 +3,7 @@ CFLAGS = \
 	-g \
 	-O3 \
 	-W \
+	-D_DEFAULT_SOURCE \
 	-Wall \
 	-Wp,-MMD,$(dir $@).$(notdir $@).d \
 	-Wp,-MT,$@ \
@@ -25,3 +26,5 @@ clean:
 	$(RM) *.o
 
 -include .*.o.d
+
+CFLAGS += 

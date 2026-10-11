@@ -11,6 +11,8 @@
 #include <assert.h>
 #include "v3.h"
 
+#define _DEFAULT_SOURCE
+
 #ifndef M_PI
 #define M_PI   3.1415926535897932384
 #endif
